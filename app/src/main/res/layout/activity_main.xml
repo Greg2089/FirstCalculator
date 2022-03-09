@@ -10,7 +10,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_margin="1dp"
-        android:backgroundTint="#B0E0E6"
+        android:backgroundTint="@color/numbers"
         android:text="@string/button1"
         android:textColor="@color/black"
         android:layout_columnWeight="1"/>
@@ -20,7 +20,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_margin="1dp"
-        android:backgroundTint="#B0E0E6"
+        android:backgroundTint="@color/numbers"
         android:text="@string/button2"
         android:textColor="@color/black"
         android:layout_columnWeight="1"/>
@@ -30,7 +30,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_margin="1dp"
-        android:backgroundTint="#B0E0E6"
+        android:backgroundTint="@color/numbers"
         android:text="@string/button3"
         android:textColor="@color/black"
         android:layout_columnWeight="1"/>
@@ -50,7 +50,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_margin="1dp"
-        android:backgroundTint="#B0E0E6"
+        android:backgroundTint="@color/numbers"
         android:text="@string/button4"
         android:textColor="@color/black"
         android:layout_columnWeight="1"/>
@@ -60,7 +60,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_margin="1dp"
-        android:backgroundTint="#B0E0E6"
+        android:backgroundTint="@color/numbers"
         android:text="@string/button5"
         android:textColor="@color/black"
         android:layout_columnWeight="1"/>
@@ -70,7 +70,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_margin="1dp"
-        android:backgroundTint="#B0E0E6"
+        android:backgroundTint="@color/numbers"
         android:text="@string/button6"
         android:textColor="@color/black"
         android:layout_columnWeight="1"/>
@@ -90,7 +90,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_margin="1dp"
-        android:backgroundTint="#B0E0E6"
+        android:backgroundTint="@color/numbers"
         android:text="@string/button7"
         android:textColor="@color/black"
         android:layout_columnWeight="1"/>
@@ -100,7 +100,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_margin="1dp"
-        android:backgroundTint="#B0E0E6"
+        android:backgroundTint="@color/numbers"
         android:text="@string/button8"
         android:textColor="@color/black"
         android:layout_columnWeight="1"/>
@@ -110,7 +110,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_margin="1dp"
-        android:backgroundTint="#B0E0E6"
+        android:backgroundTint="@color/numbers"
         android:text="@string/button9"
         android:textColor="@color/black"
         android:layout_columnWeight="1"/>
@@ -130,7 +130,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_margin="1dp"
-        android:backgroundTint="#B0E0E6"
+        android:backgroundTint="@color/numbers"
         android:text="@string/buttonDot"
         android:textColor="@color/black"
         android:layout_columnWeight="1"/>
@@ -140,7 +140,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_margin="1dp"
-        android:backgroundTint="#B0E0E6"
+        android:backgroundTint="@color/numbers"
         android:text="@string/button0"
         android:textColor="@color/black"
         android:layout_columnWeight="1"/>
