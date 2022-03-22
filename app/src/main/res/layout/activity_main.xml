@@ -5,17 +5,18 @@
     android:layout_gravity="center"
     android:orientation="vertical">
 
-    <EditText
+    <TextView
         android:id="@+id/enter"
+        android:textSize="50sp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="260dp" />
+        android:layout_marginTop="230dp" />
 
-    <EditText
+    <TextView
         android:id="@+id/result"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="5dp" />
+        android:layout_marginBottom="20dp" />
 
     <GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
         android:layout_width="match_parent"
@@ -187,8 +188,7 @@
             android:backgroundTint="@color/signs"
             android:text="@string/buttonCan"
             android:textColor="@color/black"
-            android:textSize="40sp"
-            />
+            android:textSize="40sp" />
 
         <Button
             android:id="@+id/buttonSub"
@@ -205,15 +205,14 @@
             android:id="@+id/buttonEq"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_columnSpan="4"
             android:layout_columnWeight="1"
+            android:layout_gravity="fill"
             android:layout_margin="1dp"
             android:backgroundTint="@color/signs"
             android:text="@string/buttonEq"
             android:textColor="@color/black"
-            android:textSize="40sp"
-            android:layout_columnSpan="4"
-            android:layout_gravity="fill"
-            />
+            android:textSize="40sp" />
 
 
     </GridLayout>
