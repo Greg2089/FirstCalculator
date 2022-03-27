@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.Button;
@@ -11,6 +12,10 @@ import android.widget.TextView;
 
 
 public class MainActivity extends AppCompatActivity implements OnClickListener {
+    private static final String TAG = "MyLog";
+    protected String oldNumber;
+    protected String number;
+   boolean numberNew = true;
     TextView enter;
     TextView result;
     Button button0;
@@ -75,55 +80,62 @@ public class MainActivity extends AppCompatActivity implements OnClickListener {
 
     @Override
     public void onClick(View v) {
+        if (numberNew)
+            enter.setText("");
+        numberNew = false;
+        number = enter.getText().toString();
         switch (v.getId()) {
             case R.id.button0:
-                enter.setText("0");
+                number = number + "0";
                 break;
             case R.id.button1:
-                enter.setText("1");
+                number = number + "1";
+                Log.d(TAG," Нажата 1" );
                 break;
             case R.id.button2:
-                enter.setText("2");
+                number = number + "2";
                 break;
             case R.id.button3:
-                enter.setText("3");
+                number = number + "3";
                 break;
             case R.id.button4:
-                enter.setText("4");
+                number = number + "4";
                 break;
             case R.id.button5:
-                enter.setText("5");
+                number = number + "5";
                 break;
             case R.id.button6:
-                enter.setText("6");
+                number = number + "6";
                 break;
             case R.id.button7:
-                enter.setText("7");
+                number = number + "7";
                 break;
             case R.id.button8:
-                enter.setText("8");
+                number = number + "8";
                 break;
             case R.id.button9:
-                enter.setText("9");
+                number = number + "9";
                 break;
             case R.id.buttonDiv:
-                enter.setText("/");
+                number = number + "/";
                 break;
             case R.id.buttonDot:
-                enter.setText(".");
+                number = number + ".";
                 break;
             case R.id.buttonMulty:
-                enter.setText("*");
+                number = number + "*";
                 break;
             case R.id.buttonSumm:
-                enter.setText("+");
+                number = number + "+";
                 break;
             case R.id.buttonSub:
-                enter.setText("-");
+                number = number + "-";
                 break;
             case R.id.buttonEq:
-                enter.setText("=");
+                number = number + "=";
                 break;
         }
+        oldNumber = number;//запись рнажатия цифры
+        enter.setText(oldNumber);// вывод цифры на экран
     }
 }
