@@ -12,10 +12,10 @@ import android.widget.TextView;
 
 
 public class MainActivity extends AppCompatActivity implements OnClickListener {
-    private static final String TAG = "MyLog";
+    //private static final String TAG = "MyLog";
     protected String oldNumber;
     protected String number;
-   boolean numberNew = true;
+    boolean numberNew = true;
     TextView enter;
     TextView result;
     Button button0;
@@ -36,6 +36,7 @@ public class MainActivity extends AppCompatActivity implements OnClickListener {
     Button buttonEq;
     Button buttonCan;
 
+    //создал поля кнопок и вьюх
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -76,8 +77,10 @@ public class MainActivity extends AppCompatActivity implements OnClickListener {
         buttonSumm.setOnClickListener(this);
         buttonSub.setOnClickListener(this);
         buttonEq.setOnClickListener(this);
+        buttonCan.setOnClickListener(this);
     }
 
+    //обработал нажатия кнопок через интерфейс OnClickListener
     @Override
     public void onClick(View v) {
         if (numberNew)
@@ -90,7 +93,7 @@ public class MainActivity extends AppCompatActivity implements OnClickListener {
                 break;
             case R.id.button1:
                 number = number + "1";
-                Log.d(TAG," Нажата 1" );
+                //Log.d(TAG," Нажата 1" );
                 break;
             case R.id.button2:
                 number = number + "2";
@@ -134,8 +137,11 @@ public class MainActivity extends AppCompatActivity implements OnClickListener {
             case R.id.buttonEq:
                 number = number + "=";
                 break;
+            case R.id.buttonCan:
+                number = null;
+                break;
         }
-        oldNumber = number;//запись рнажатия цифры
+        oldNumber = number;//запись нажатия цифры
         enter.setText(oldNumber);// вывод цифры на экран
     }
 }
