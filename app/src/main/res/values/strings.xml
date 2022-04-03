@@ -16,5 +16,6 @@
     <string name="button0">0</string>
     <string name="buttonEq">=</string>
     <string name="buttonSub">-</string>
-    <string name="buttonCan"><</string>
+    <string name="buttonCan">«</string>
+    <string name="TextEnter">0</string>
 </resources>
