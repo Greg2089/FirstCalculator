@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_gravity="center"
     android:orientation="vertical">
 
@@ -28,18 +30,20 @@
         android:columnCount="4"
         android:orientation="horizontal">
 
-        <Button
+        <com.google.android.material.button.MaterialButton
             android:id="@+id/button1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_columnWeight="1"
             android:layout_margin="1dp"
+            app:cornerRadius="20dp"
             android:backgroundTint="@color/numbers"
             android:text="@string/button1"
             android:textColor="@color/black"
-            android:textSize="40sp" />
+            android:textSize="@dimen/numberSize"
+            tools:ignore="MissingClass" />
 
-        <Button
+        <com.google.android.material.button.MaterialButton
             android:id="@+id/button2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -48,9 +52,9 @@
             android:backgroundTint="@color/numbers"
             android:text="@string/button2"
             android:textColor="@color/black"
-            android:textSize="40sp" />
+            android:textSize="@dimen/numberSize" />
 
-        <Button
+        <com.google.android.material.button.MaterialButton
             android:id="@+id/button3"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -59,9 +63,9 @@
             android:backgroundTint="@color/numbers"
             android:text="@string/button3"
             android:textColor="@color/black"
-            android:textSize="40sp" />
+            android:textSize="@dimen/numberSize" />
 
-        <Button
+        <com.google.android.material.button.MaterialButton
             android:id="@+id/buttonDiv"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -70,9 +74,9 @@
             android:backgroundTint="@color/signs"
             android:text="@string/buttonDiv"
             android:textColor="@color/black"
-            android:textSize="40sp" />
+            android:textSize="@dimen/numberSize" />
 
-        <Button
+        <com.google.android.material.button.MaterialButton
             android:id="@+id/button4"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -81,9 +85,9 @@
             android:backgroundTint="@color/numbers"
             android:text="@string/button4"
             android:textColor="@color/black"
-            android:textSize="40sp" />
+            android:textSize="@dimen/numberSize" />
 
-        <Button
+        <com.google.android.material.button.MaterialButton
             android:id="@+id/button5"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -92,9 +96,9 @@
             android:backgroundTint="@color/numbers"
             android:text="@string/button5"
             android:textColor="@color/black"
-            android:textSize="40sp" />
+            android:textSize="@dimen/numberSize" />
 
-        <Button
+        <com.google.android.material.button.MaterialButton
             android:id="@+id/button6"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -103,9 +107,9 @@
             android:backgroundTint="@color/numbers"
             android:text="@string/button6"
             android:textColor="@color/black"
-            android:textSize="40sp" />
+            android:textSize="@dimen/numberSize" />
 
-        <Button
+        <com.google.android.material.button.MaterialButton
             android:id="@+id/buttonMulty"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -114,9 +118,9 @@
             android:backgroundTint="@color/signs"
             android:text="@string/buttonMylty"
             android:textColor="@color/black"
-            android:textSize="40sp" />
+            android:textSize="@dimen/numberSize" />
 
-        <Button
+        <com.google.android.material.button.MaterialButton
             android:id="@+id/button7"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -125,9 +129,9 @@
             android:backgroundTint="@color/numbers"
             android:text="@string/button7"
             android:textColor="@color/black"
-            android:textSize="40sp" />
+            android:textSize="@dimen/numberSize" />
 
-        <Button
+        <com.google.android.material.button.MaterialButton
             android:id="@+id/button8"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -136,9 +140,9 @@
             android:backgroundTint="@color/numbers"
             android:text="@string/button8"
             android:textColor="@color/black"
-            android:textSize="40sp" />
+            android:textSize="@dimen/numberSize" />
 
-        <Button
+        <com.google.android.material.button.MaterialButton
             android:id="@+id/button9"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -147,9 +151,9 @@
             android:backgroundTint="@color/numbers"
             android:text="@string/button9"
             android:textColor="@color/black"
-            android:textSize="40sp" />
+            android:textSize="@dimen/numberSize" />
 
-        <Button
+        <com.google.android.material.button.MaterialButton
             android:id="@+id/buttonSumm"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -158,9 +162,9 @@
             android:backgroundTint="@color/signs"
             android:text="@string/buttonSumm"
             android:textColor="@color/black"
-            android:textSize="40sp" />
+            android:textSize="@dimen/numberSize" />
 
-        <Button
+        <com.google.android.material.button.MaterialButton
             android:id="@+id/buttonDot"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -169,9 +173,9 @@
             android:backgroundTint="@color/numbers"
             android:text="@string/buttonDot"
             android:textColor="@color/black"
-            android:textSize="40sp" />
+            android:textSize="@dimen/numberSize" />
 
-        <Button
+        <com.google.android.material.button.MaterialButton
             android:id="@+id/button0"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -180,9 +184,9 @@
             android:backgroundTint="@color/numbers"
             android:text="@string/button0"
             android:textColor="@color/black"
-            android:textSize="40sp" />
+            android:textSize="@dimen/numberSize" />
 
-        <Button
+        <com.google.android.material.button.MaterialButton
             android:id="@+id/buttonCan"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -191,9 +195,9 @@
             android:backgroundTint="@color/signs"
             android:text="@string/buttonCan"
             android:textColor="@color/black"
-            android:textSize="40sp" />
+            android:textSize="@dimen/numberSize" />
 
-        <Button
+        <com.google.android.material.button.MaterialButton
             android:id="@+id/buttonSub"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -202,9 +206,9 @@
             android:backgroundTint="@color/signs"
             android:text="@string/buttonSub"
             android:textColor="@color/black"
-            android:textSize="40sp" />
+            android:textSize="@dimen/numberSize" />
 
-        <Button
+        <com.google.android.material.button.MaterialButton
             android:id="@+id/buttonEq"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -215,7 +219,7 @@
             android:backgroundTint="@color/signs"
             android:text="@string/buttonEq"
             android:textColor="@color/black"
-            android:textSize="40sp" />
+            android:textSize="@dimen/numberSize" />
 
 
     </GridLayout>

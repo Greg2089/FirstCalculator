@@ -13,28 +13,28 @@ import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity implements OnClickListener {
     //private static final String TAG = "MyLog";
-    protected String oldNumber;
-    protected String number;
+    String oldNumber;
+    String number;
     boolean numberNew = true;
-    TextView enter;
-    TextView result;
-    Button button0;
-    Button button1;
-    Button button2;
-    Button button3;
-    Button button4;
-    Button button5;
-    Button button6;
-    Button button7;
-    Button button8;
-    Button button9;
-    Button buttonDiv;
-    Button buttonDot;
-    Button buttonMulty;
-    Button buttonSumm;
-    Button buttonSub;
-    Button buttonEq;
-    Button buttonCan;
+    private TextView enter;
+    private TextView result;
+    private Button button0;
+    private Button button1;
+    private Button button2;
+    private Button button3;
+    private Button button4;
+    private Button button5;
+    private Button button6;
+    private Button button7;
+    private Button button8;
+    private Button button9;
+    private Button buttonDiv;
+    private Button buttonDot;
+    private Button buttonMulty;
+    private Button buttonSumm;
+    private Button buttonSub;
+    private Button buttonEq;
+    private Button buttonCan;
 
     //создал поля кнопок и вьюх
     @Override
