@@ -1,4 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <dimen name="numberSize">40sp</dimen>
+    <dimen name="enterSize">50sp</dimen>
+    <dimen name="enterMargin">230dp</dimen>
+    <dimen name="resultMargin">20dp</dimen>
+    <dimen name="textSizeResult">30sp</dimen>
+    <dimen name="buttonsMargin">1dp</dimen>
 </resources>
