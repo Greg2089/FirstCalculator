@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="NumbersStyle">
+        <item name="android:backgroundTint">@color/numbers</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">@dimen/numberSize</item>
+        <item name="cornerRadius">@dimen/buttonRadius</item>
+        <item name="android:gravity">center</item>
+    </style>
+    <style name="NumbersStyle.SignsStyle">
+        <item name="backgroundTint">@color/signs</item>
+    </style>
+</resources>
