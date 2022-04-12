@@ -79,7 +79,6 @@ public class MainActivity extends AppCompatActivity implements OnClickListener {
         buttonEq.setOnClickListener(this);
         buttonCan.setOnClickListener(this);
     }
-
     //обработал нажатия кнопок через интерфейс OnClickListener
     @Override
     public void onClick(View v) {
