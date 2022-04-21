@@ -1,10 +1,10 @@
 package com.hfad.firstcalculator;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
 
 import android.os.Bundle;
-import android.util.Log;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.Button;
@@ -12,7 +12,8 @@ import android.widget.TextView;
 
 
 public class MainActivity extends AppCompatActivity implements OnClickListener {
-    //private static final String TAG = "MyLog";
+    Сalculator сalculator = new Сalculator();
+    private static final String CALCULATOR = "CALCULATOR";
     String oldNumber;
     String number;
     boolean numberNew = true;
@@ -35,12 +36,18 @@ public class MainActivity extends AppCompatActivity implements OnClickListener {
     private Button buttonSub;
     private Button buttonEq;
     private Button buttonCan;
+    boolean isNew = true;
 
     //создал поля кнопок и вьюх
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        Сalculator сalculator;
+        if (savedInstanceState != null) {
+            сalculator = (Сalculator) savedInstanceState.get(CALCULATOR);
+        }
+        showResult();
         enter = (TextView) findViewById(R.id.enter);
         result = (TextView) findViewById(R.id.result);
         button0 = (Button) findViewById(R.id.button0);
@@ -83,65 +90,81 @@ public class MainActivity extends AppCompatActivity implements OnClickListener {
     //обработал нажатия кнопок через интерфейс OnClickListener
     @Override
     public void onClick(View v) {
-        if (numberNew)
-            enter.setText("");
-        numberNew = false;
+        if (isNew) {
+            result.setText("");
+        }
+        isNew = false;
+        TextView result = findViewById(R.id.result);
         number = enter.getText().toString();
         switch (v.getId()) {
             case R.id.button0:
-                number = number + "0";
+                сalculator.stringBuilder.append("0");
                 break;
             case R.id.button1:
-                number = number + "1";
+                сalculator.stringBuilder.append("1");
                 //Log.d(TAG," Нажата 1" );
                 break;
             case R.id.button2:
-                number = number + "2";
+                сalculator.stringBuilder.append("2");
                 break;
             case R.id.button3:
-                number = number + "3";
+                сalculator.stringBuilder.append("3");
                 break;
             case R.id.button4:
-                number = number + "4";
+                сalculator.stringBuilder.append("4");
                 break;
             case R.id.button5:
-                number = number + "5";
+                сalculator.stringBuilder.append("5");
                 break;
             case R.id.button6:
-                number = number + "6";
+                сalculator.stringBuilder.append("6");
                 break;
             case R.id.button7:
-                number = number + "7";
+                сalculator.stringBuilder.append("7");
                 break;
             case R.id.button8:
-                number = number + "8";
+                сalculator.stringBuilder.append("8");
                 break;
             case R.id.button9:
-                number = number + "9";
+                сalculator.stringBuilder.append("9");
                 break;
             case R.id.buttonDiv:
-                number = number + "/";
+                сalculator.stringBuilder.append("/");
                 break;
             case R.id.buttonDot:
-                number = number + ".";
+                сalculator.stringBuilder.append(".");
                 break;
             case R.id.buttonMulty:
-                number = number + "*";
+                сalculator.stringBuilder.append("*");
                 break;
             case R.id.buttonSumm:
-                number = number + "+";
+                сalculator.stringBuilder.append("+");
                 break;
             case R.id.buttonSub:
-                number = number + "-";
+                сalculator.stringBuilder.append("-");
                 break;
             case R.id.buttonEq:
-                number = number + "=";
+                сalculator.stringBuilder.append("=");
                 break;
             case R.id.buttonCan:
-                number = null;
+                if (сalculator.stringBuilder != null){
+                    сalculator.stringBuilder = new StringBuilder();
+                }
                 break;
         }
-        oldNumber = number;//запись нажатия цифры
+        // oldNumber = number;//запись нажатия цифры
+        result.setText(сalculator.stringBuilder.toString());
         enter.setText(oldNumber);// вывод цифры на экран
+    }
+
+    @Override
+    protected void onSaveInstanceState(@NonNull Bundle outState) {
+        super.onSaveInstanceState(outState);
+        outState.putSerializable(CALCULATOR, сalculator);
+    }
+
+    public void showResult() {
+        TextView textView = findViewById(R.id.result);
+        textView.setText(сalculator.stringBuilder.toString());
     }
 }
